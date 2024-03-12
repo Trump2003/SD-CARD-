@@ -92,7 +92,7 @@ void SDTimer_Handler(void)
 void SysTick_Handler(void)
 {
     FatFsCnt ++;
-    if(FatFsCnt > = 10)
+    if(FatFsCnt >= 10)
     {
       FatFsCnt = 0;
       SDTimer_Handler();
